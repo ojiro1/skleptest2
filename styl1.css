@@ -1,0 +1,116 @@
+/* Styl dla całej strony */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Styl dla menu */
+.menu {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styl dla logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+/* Styl dla tytułu */
+.tittle3 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tittle3 h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Styl dla kart ofert */
+#offer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.card .image img {
+    width: 100%;
+    height: auto;
+}
+
+.card .content {
+    padding: 15px;
+}
+
+.card .content h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.card .content .price {
+    font-size: 20px;
+    color: #e67e22;
+    margin-top: 10px;
+}
+
+/* Styl dla stopki */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
