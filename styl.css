@@ -11,13 +11,13 @@ body {
 .menu {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 .menu ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 10;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
