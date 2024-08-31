@@ -20,6 +20,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .menu ul li {
@@ -164,4 +165,35 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Media queries dla responsywności */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .image img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .map-content {
+        flex-direction: column;
+    }
+
+    .map-image img {
+        width: 100px; /* Zmniejszono szerokość obrazka dla mniejszych ekranów */
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
