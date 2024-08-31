@@ -30,7 +30,7 @@ body {
 .menu ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125rem; /* Zmieniono na rem */
 }
 
 .menu ul li a:hover {
@@ -39,7 +39,7 @@ body {
 
 /* Styl dla logo */
 .logo {
-    font-size: 30px; /* Zwiększono rozmiar czcionki logo */
+    font-size: 1.875rem; /* Zmieniono na rem */
     font-weight: bold;
     margin-right: auto;
 }
@@ -55,18 +55,18 @@ body {
 }
 
 #about .image img {
-    width: 250px; /* Zwiększono szerokość obrazka */
+    width: 15.625rem; /* Zmieniono na rem */
     height: auto;
     border-radius: 50%;
     margin-right: 20px;
 }
 
 #about .content {
-    max-width: 600px;
+    max-width: 37.5rem; /* Zmieniono na rem */
 }
 
 #about .content p {
-    font-size: 18px;
+    font-size: 1.125rem; /* Zmieniono na rem */
     line-height: 1.6;
 }
 
@@ -79,7 +79,7 @@ body {
 }
 
 .map h2 {
-    font-size: 24px;
+    font-size: 1.5rem; /* Zmieniono na rem */
     margin-bottom: 20px;
 }
 
@@ -91,7 +91,7 @@ body {
 }
 
 .map-image img {
-    width: 150px; /* Zwiększono szerokość obrazka */
+    width: 9.375rem; /* Zmieniono na rem */
     height: auto;
 }
 
@@ -102,7 +102,7 @@ body {
 }
 
 .tittle h1, .tittle2 h1 {
-    font-size: 36px;
+    font-size: 2.25rem; /* Zmieniono na rem */
     color: #333;
 }
 
@@ -120,7 +120,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 300px;
+    width: 18.75rem; /* Zmieniono na rem */
     text-align: center;
 }
 
@@ -134,12 +134,12 @@ body {
 }
 
 .card .content h3 {
-    font-size: 24px;
+    font-size: 1.5rem; /* Zmieniono na rem */
     margin: 10px 0;
 }
 
 .card .content .price {
-    font-size: 20px;
+    font-size: 1.25rem; /* Zmieniono na rem */
     color: #e67e22;
     margin-top: 10px;
 }
@@ -189,7 +189,7 @@ footer a:hover {
     }
 
     .map-image img {
-        width: 100px; /* Zmniejszono szerokość obrazka dla mniejszych ekranów */
+        width: 6.25rem; /* Zmieniono na rem */
     }
 
     .card {
