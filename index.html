@@ -4,58 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serwis Tam i z Powrotem</title>
-    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="styl1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-</head> 
-<body> 
-    <div class="menu"> 
-        
-        <ul class="menu">
-            <h2 class="logo"><i class="grafika"></i> Serwis Tam i z Powrotem </h2> <!-- grafika firmy-->
-            <li><a href="index.html">Strona główna</a></li>
-            <li><a href="#about">O nas</a></li>
-            <li><a href="#offer">Usługi</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </div>
-    <div id="about">
+    <script src="skrypt.js"></script>
+</head>
+<body>
+    <header class="fade-in">
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="#about">O nas</a></li>
+                <li><a href="#offer">Oferta</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="menu fade-in fade-in-delay-1">
+            <ul class="menu">
+                <h2 class="logo"><i class="grafika"></i>Serwis Tam i z Powrotem</h2>
+                <p>Twój sprzęt potrzebuje naprawy lub modernizacji? Jesteśmy tu, żeby pomóc.</p>
+                <button><a href="#offer">Sprawdź ofertę</a></button>
+            </ul>
+        </div>
+    </header>
+    <div id="about" class="fade-in fade-in-delay-2">
         <div class="image">
             <img src="logo.jpg" alt="logo">
         </div>
         <div class="content">
-            <p>Serwis Tam i z Powrotem precyzuję się w technologii apple. <b>Satysfakcja klientów</b> jest dla nas najważniejsza. </p>
+            <p>Serwis Tam i z Powrotem precyzuję się w technologii apple. <b>Satysfakcja klientów</b> jest dla nas najważniejsza.</p>
             <br>
-            <h2>Godziny Otwarcia : </h2>
-            <p>Poniedziałek - Piątek : <b><i>10⁰⁰ - 18⁰⁰</i></b> <br>
-               Sobota - Niedziela : 
- 
+            <h2>Godziny Otwarcia:</h2>
+            <p>Poniedziałek - Piątek: <b><i>10⁰⁰ - 18⁰⁰</i></b><br>
+               Sobota - Niedziela:
             </p>
-        </div> 
-    </div> 
-    <div class="map">
+        </div>
+    </div>
+    <div class="map fade-in fade-in-delay-3">
         <h2>Tu się znajdujemy</h2>
         <div class="map-content">
             <div class="map-image">
                 <img src="dymek.png" alt="dymek">
-                
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1490.7489600440263!2d21.337063192994314!3d51.38686247461965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4718605345a92577%3A0x644ba55647ee612f!2sNiemianowice%2032%2C%2026-634%20Niemianowice!5e1!3m2!1spl!2spl!4v1716139927805!5m2!1spl!2spl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <a href="https://www.google.pl/maps/dir//Niemianowice+32,+26-634+Niemianowice/@51.386674,21.3348378,17z/data=!4m18!1m8!3m7!1s0x4718605345a92577:0x644ba55647ee612f!2sNiemianowice+32,+26-634+Niemianowice!3b1!8m2!3d51.3866707!4d21.3374127!16s%2Fg%2F11c5lg85r5!4m8!1m0!1m5!1m1!1s0x4718605345a92577:0x644ba55647ee612f!2m2!1d21.3374127!2d51.3866707!3e3?entry=ttu" target="_blank"><h2>Kliknij tutaj!</h2></a>
     </div>
-    <div class="tittle">
+    <div class="container fade-in fade-in-delay-4">
+        <h1>Co nas wyróżnia?</h1>
+        <div class="features">
+            <div class="feature fade-in fade-in-delay-5">
+                <div class="icon">⭐</div>
+                <h2>Szeroki wachlarz usług</h2>
+                <p>Oferujemy kompleksową obsługę urządzeń elektronicznych, co wyróżnia nas na tle konkurencji i zapewnia pełną satysfakcję klientów.</p>
+            </div>
+            <div class="feature fade-in fade-in-delay-6">
+                <div class="icon">✔️</div>
+                <h2>Doświadczeni specjaliści</h2>
+                <p>Nasi technicy to pasjonaci technologii, gwarantujący wysoką jakość usług i profesjonalne podejście do każdej naprawy.</p>
+            </div>
+            <div class="feature fade-in fade-in-delay-7">
+                <div class="icon">📈</div>
+                <h2>Wysoka jakość obsługi</h2>
+                <p>Nasze usługi cechuje staranność i dbałość o detale, co przekłada się na zadowolenie klientów i ich lojalność.</p>
+            </div>
+        </div>
+    </div>
+    <div class="tittle fade-in fade-in-delay-8">
         <h1>Iphone</h1>
     </div>
-    <div id="offer"> 
+    <div id="offer" class="fade-in fade-in-delay-9">
         <!-- wymiana baterii -->
-        
-        <div class="card"> 
-            <div class="image"> 
-                <img src="bateria.png" alt="wymiana baterii"> 
-            </div> 
-            <div class="content"> 
-               <a href="bateria.html"> <h3>Wymiana baterii </h3> 
+        <div class="card">
+            <div class="image">
+                <img src="bateria.png" alt="bateria"> 
                 <p></p>
                 <p class="price">Wybierz model</p></a>
             </div> 
