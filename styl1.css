@@ -305,8 +305,8 @@ footer a:hover {
 
 @media only screen and (max-width: 480px) {
     header {
-        padding: 20% 0;
-        font-size: 1.5em;
+        padding: 10% 0;
+        font-size: 1.2em;
     }
 
     .feature {
