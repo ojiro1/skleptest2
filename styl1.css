@@ -7,50 +7,176 @@ body {
     color: #333;
 }
 
-/* Styl dla menu */
-.menu {
+
+header {
+    background-image: url('grafika.jpg');
+    text-align: center;
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 10% 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Zmieniono z cover na contain */
+    font-size: 2em;
+}
+.container {
+    text-align: center;
+    padding: 20px;
 }
 
-.menu ul {
-    list-style: none;
-    margin: 0;
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.feature {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+.feature .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #6a1b9a;
+}
+
+.feature h2 {
+    color: #6a1b9a;
+}
+
+.feature p {
+    color: #333;
+}
+
+
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #cc5200;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000; /* Aby nawigacja była nad innymi elementami */
+}
+
+nav ul {
+    list-style-type: none;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
 
-.menu ul li {
+nav ul li {
     margin: 0 15px;
 }
 
-.menu ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
 }
 
-.menu ul li a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
 /* Styl dla logo */
 .logo {
-    font-size: 24px;
+    font-size: 1.875rem; /* Zmieniono na rem */
     font-weight: bold;
     margin-right: auto;
 }
 
-/* Styl dla tytułu */
-.tittle3 {
+/* Styl dla sekcji "O nas" */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+#about .image img {
+    width: 20rem; /* Zwiększono z 15.625rem */
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#about .content {
+    max-width: 37.5rem; /* Zmieniono na rem */
+}
+
+#about .content p {
+    font-size: 1.125rem; /* Zmieniono na rem */
+    line-height: 1.6;
+}
+
+/* Styl dla mapy */
+.map {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.map h2 {
+    font-size: 1.5rem; /* Zmieniono na rem */
+    margin-bottom: 20px;
+}
+
+.map-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.map-image img {
+    width: 15rem; /* Zwiększono z 9.375rem */
+    height: auto;
+}
+
+/* Styl dla tytułów */
+.tittle, .tittle2 {
     text-align: center;
     margin: 20px 0;
 }
 
-.tittle3 h1 {
-    font-size: 36px;
+.tittle h1, .tittle2 h1 {
+    font-size: 2.25rem; /* Zmieniono na rem */
     color: #333;
 }
 
@@ -68,7 +194,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 300px;
+    width: 18.75rem; /* Zmieniono na rem */
     text-align: center;
 }
 
@@ -82,12 +208,12 @@ body {
 }
 
 .card .content h3 {
-    font-size: 24px;
+    font-size: 1.5rem; /* Zmieniono na rem */
     margin: 10px 0;
 }
 
 .card .content .price {
-    font-size: 20px;
+    font-size: 1.25rem; /* Zmieniono na rem */
     color: #e67e22;
     margin-top: 10px;
 }
@@ -113,4 +239,299 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Styl dla całej strony */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-image: url('grafika.jpg');
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10% 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 2em;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.feature {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+.feature .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #6a1b9a;
+}
+
+.feature h2 {
+    color: #6a1b9a;
+}
+
+.feature p {
+    color: #333;
+}
+
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #cc5200;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.logo {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+#about .image img {
+    width: 20rem;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#about .content {
+    max-width: 37.5rem;
+}
+
+#about .content p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.map {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.map h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.map-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.map-image img {
+    width: 15rem;
+    height: auto;
+}
+
+.tittle, .tittle2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tittle h1, .tittle2 h1 {
+    font-size: 2.25rem;
+    color: #333;
+}
+
+#offer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 18.75rem;
+    text-align: center;
+}
+
+.card .image img {
+    width: 100%;
+    height: auto;
+}
+
+.card .content {
+    padding: 15px;
+}
+
+.card .content h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.card .content .price {
+    font-size: 1.25rem;
+    color: #e67e22;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animacje */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.fade-in-delay-1 {
+    animation-delay: 0.5s;
+}
+
+.fade-in-delay-2 {
+    animation-delay: 1s;
+}
+
+.fade-in-delay-3 {
+    animation-delay: 1.5s;
+}
+/* Media queries dla responsywności */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .image img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .map-content {
+        flex-direction: column;
+    }
+
+    .map-image img {
+        width: 10rem; /* Zwiększono z 6.25rem */
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
